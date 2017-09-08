@@ -1,0 +1,130 @@
+@import "./../var";
+.main {
+  width: 100%;
+  height: 100%;
+  .menu {
+    position: absolute;
+    float: left;
+    height: 100%;
+    min-height: 500px;
+    top: 0;
+    bottom: 0;
+    width: 220px;
+    background-color: @fcf;
+    overflow: hidden;
+    .menu_logo {
+      padding: 15px;
+      font-size: 12px;
+      display: inline-block;
+      .menu_logo_item {
+        float: left;
+        p {
+          margin: 0;
+          padding-left: 10px;
+          //padding-bottom: 3px;
+          //padding-top: 3px;
+          font-weight: bold;
+          color: @fc3;
+        }
+      }
+    }
+    .menu_list {
+      .router-link-active {
+        background-color: @bgc;
+        &:before {
+          content: '';
+          position: absolute;
+          margin-left: -20px;
+          //display: inline-block;
+          width: 4px;
+          height: 40px;
+          background-color: #35bbf7;
+        }
+      }
+      li {
+        list-style: none;
+        a {
+          display: inline-block;
+          //padding: 0 10px;
+          padding-left: 20px;
+          color: @fc3;
+          width: 220px;
+          height: 40px;
+          line-height: 40px;
+          .fs(14);
+          border-radius: 5px;
+          z-index: 9999;
+          font-size: 16px;
+          transition: all 1s;
+          &:hover {
+            background-color: @bgc;
+          }
+          .i1 {
+            color: #0d94f3;
+          }
+          .i2 {
+            color: #00ff00;
+          }
+          .i3 {
+            color: #4db3ff;
+          }
+        }
+      }
+      h6 {
+        font-size: 14px;
+        padding-left: 15px;
+        margin-bottom: 4px;
+        margin-top: 6px;
+        color: @fc9;
+      }
+    }
+  }
+  .content {
+    position: absolute;
+    width: calc(~'(100% - 220px)');
+    min-width: 1060px;
+    height: 100%;
+    float: left;
+    margin-left: 220px;
+    background-color: @bgc;
+    .top {
+      width: 100%;
+      position: relative;
+      top: 0;
+      height: 60px;
+      background-color: #35bbf7;
+      text-align: right;
+      z-index: 999;
+      .fs(14px);
+      color: @fcf;
+      &-inner {
+        margin: 0 30px;
+        line-height: 60px;
+        span {
+          .icon2 {
+            .fs(12px)
+          }
+          .top-right {
+            padding-right: 24px;
+          }
+        }
+      }
+    }
+    .bottom {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 40px;
+      background-color: #fff;
+      border-top: 1px solid @bc;
+      &-inner {
+        width: 100%;
+        margin: @m0a;
+        line-height: 40px;
+        text-align: center;
+        .fs(14px);
+        color: @fc6;
+      }
+    }
+  }
+}

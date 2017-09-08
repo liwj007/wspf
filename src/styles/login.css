@@ -1,0 +1,155 @@
+body {
+    background-color: #fafbfc
+}
+body {
+    color: #000
+}
+body,button,input,select,textarea {
+    font: 12px/1.5 Microsoft YaHei UI,arial,\5b8b\4f53
+}
+.body-container,.login,body,html {
+    height: 100%
+}
+.login {
+    position: relative;
+    background: #fff
+}
+
+.login:after,.login:before {
+    position: absolute;
+    content: "";
+    width: 431px;
+    height: 585px
+}
+
+.login:before {
+    background: url(../../src/assets/login-left.png) 50% no-repeat
+}
+
+.login:after {
+    background: url(../../src/assets/login-right.png) 50% no-repeat;
+    right: 0;
+    top: 0;
+    width: 374px;
+    height: 502px
+}
+
+.login .login-logo {
+    background: url(../../src/assets/login-logo.png) 50% no-repeat;
+    width: 184px;
+    height: 39px;
+    text-indent: -9999px;
+    position: fixed;
+    top: 40px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%)
+}
+
+.login .login-form {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    font-size: 16px
+}
+
+.login .login-form p {
+    margin-bottom: 20px
+}
+
+.login .login-form .form-group {
+    margin-top: 15px;
+    position: relative
+}
+
+.login .login-form .form-group .icon {
+    position: absolute;
+    left: 10px;
+    top: 15px
+}
+
+.login .login-form .form-group .check-model {
+    position: absolute;
+    right: 6px;
+    top: 17px;
+    border-radius: 8px;
+    width: 40px;
+    height: 16px;
+    background-color: #8091a5;
+    cursor: pointer
+}
+
+.login .login-form .form-group .check-model:before {
+    content: "***";
+    color: #fff;
+    position: absolute;
+    top: 2px;
+    left: 18px;
+    font-size: 12px
+}
+
+.login .login-form .form-group .check-model i {
+    width: 14px;
+    height: 14px;
+    background: #fff;
+    border-radius: 7px;
+    transition: all .3s;
+    position: absolute;
+    top: 1px;
+    left: 1px
+}
+
+.login .login-form .form-group .active {
+    background: #8091a5;
+    transition: all .3s
+}
+
+.login .login-form .form-group .active i {
+    transition: all .3s;
+    left: 25px
+}
+
+.login .login-form .form-group .active:before {
+    content: "abc";
+    left: 3px;
+    top: -1px
+}
+
+.login .login-form input {
+    width: 400px;
+    border: 1px solid #eee;
+    text-indent: 40px;
+    border-radius: 5px;
+    height: 50px
+}
+
+.login .login-form input[type=checkbox] {
+    height: 20px;
+    width: 20px;
+    vertical-align: text-bottom;
+    margin-right: 10px
+}
+
+.login .login-form a {
+    position: absolute;
+    right: 0;
+    top: 10px
+}
+
+.login .login-form input[type=submit] {
+    height: 60px;
+    font-size: 22px;
+    letter-spacing: 10px;
+    text-indent: 10px
+}
+
+.login .copy-right {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    font-size: 12px;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%)
+}

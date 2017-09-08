@@ -1,0 +1,194 @@
+/**
+* @fc*: font-color字体颜色
+*/
+@fc0: #000; //特殊情况下使用，如文字需要着重显示
+@fc3: #333; //全站正文、标题颜色
+@fc6: #666; //用于普通段落
+@fc9: #999; //用于次要文字内容，如解释、描述内容
+@fcf: #fff; //有背景色的时候
+
+/**
+* @bc*: border-color边框、分割线、描边等
+*/
+@bc: #ddd;
+
+/**
+* @bgc*: background-color页面背景色
+*/
+@bgc: #f4f6fa;
+
+/**
+* @tc*: table-column表单分栏底色
+*/
+@tc: #fbfbfb;
+
+/**
+* @nbg*: nav-background-color导航栏背景色
+*/
+@nbg: #20303C;
+
+/**
+* @oc*: outstanding-color突出色
+*/
+@oc: #f60;
+
+/**
+* @dc*: default-color主色蓝色
+*/
+@dcl: #0d94f3; //文字链接色
+
+@dc: #35bbf7;  //全站默认蓝色文字颜色、蓝色按钮背景色、导航栏选中状态背景色
+@dch: #18a7e7; //hover 蓝色按钮hover色、导航栏选中状态hover色
+@dcd: #aee4fc; //disable 蓝色按钮禁用状态背景色
+
+/**
+* @sc*: success-color绿色
+*/
+@sc: #0dbd73;  //全站默认绿色文字颜色、绿色按钮背景色
+@sch: #24c682; //hover 绿色按钮hover色
+@scd: #a7d8cd; //disable 绿色按钮禁用状态背景色
+
+/**
+* @ec*: error-color红色
+*/
+@ec: #f11;      //全站默认红色文字颜色、红色按钮背景色
+@ech: #f33;     //hover 红色按钮hover色
+@ecd: #ffadad; //disable 红色按钮禁用状态背景色
+
+/**
+* .fs*: font-size字体大小
+* .lh*: line-height行距
+*/
+.fs(@size) {
+  font-size: @size;
+}
+.lh(@size) {
+  line-height: @size;
+}
+
+.fl12 {         //用于所有提示性内容
+  .fs(12px);
+  .lh(20px);
+}
+.fl14 {         //用于所有正文内容
+  .fs(14px);
+  .lh(22px);
+}
+.fl16 {         //用于导航栏、标题栏、大类标题等
+  .fs(16px);
+  .lh(28px);
+}
+.fl20 {         //用于详情页、弹窗等大标题
+  .fs(20px);
+  .lh(36px);
+}
+.fl24 {         //用于少量重要标题
+  .fs(24px);
+  .lh(42px);
+}
+
+
+@m0a: 0 auto;
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.w100 {
+  width: 100%;
+}
+
+.cp {
+  cursor: pointer;
+}
+
+.w100s {
+  width: 100%;
+}
+.w120 {
+  width: 120px;
+}
+.cell button span {
+  padding-right: 10px;
+}
+.cell button:hover span {
+  padding-left: 10px;
+  padding-right: 0;
+  transition: all .5s;
+}
+.mr5{
+  margin-right: 5px;
+}
+.mr30 {
+  margin-right: 30px;
+}
+.mt5 {
+  margin-top: 5px;
+}
+.mt10 {
+  margin-top: 10px;
+}
+.mt15 {
+  margin-top: 15px;
+}
+.mt8 {
+  margin-top: 8px;
+}
+.mt22{
+  margin-top: 22px;
+}
+.mt30 {
+  margin-top: 30px;
+}
+.mt300 {
+  margin-top: 300px;
+}
+.m0 {
+  margin: 0;
+}
+.ml20{
+  margin-left: 20px;
+}
+.ml50{
+  margin-left: 50px;
+}
+.ml100{
+   margin-left: 100px;
+ }
+
+.mb5{
+  margin-bottom: 5px;
+}
+.mb15{
+   margin-bottom: 15px;
+ }
+
+.cr{
+  color: @ec;
+}
+.cb{
+  color: @dcl;
+}
+.cg{
+  color: @fc9;
+}
+.el-form-item__label {
+  color: @fc9;
+}
+.q-success-tip {
+  margin: 240px auto 0 auto;
+  display: table;
+}
+.icon4 {
+  color: @dcl;
+}
+.icon5 {
+  color: @sch;
+}
+.pt10 {
+  padding-top: 10px;
+}
+.tac{
+  text-align: center;
+}

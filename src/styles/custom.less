@@ -1,0 +1,288 @@
+//基本信息配置
+@font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+@fs12: 12/16rem;
+@fs14: 14/16rem;
+@fs16: 1rem;
+@fs18: 18/16rem;
+@fs20: 20/16rem;
+@fs24: 24/16rem;
+@fs30: 30/16rem;
+@bg: #f6f6f6;
+@top-bg: #35bbf7;
+@top-fcf: #feffff;
+
+
+@menu-width: 220px;
+@menu-bg-color: #20303C;
+
+// Animation
+@animation-time         : .3s;
+@transition-time        : .2s;
+@ease-in-out            : ease-in-out;
+
+@fc3: #333;
+@active-color: #00aaff; //tab选中色、着重文字色
+@link-default-color: #474747; //文字链接未点击的颜色
+@link-color: #6dc3ea; //文字链接色
+@link-hover-color: tint(@link-color, 20%);
+@link-active-color: shade(@link-color, 5%);
+@transition-time: .2s;
+@cursor-disabled: not-allowed;
+@cursor-pointer: pointer;
+@w1280: 1280px;
+@w100: 100px;
+@m0a: 0 auto;
+@tc: center;
+@filter-bg: #f7f8fa;
+@blue: #35bbf7;
+@border-color: #d2d2d2;
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.abs {
+  position: absolute;
+}
+
+.rel {
+  position: relative;
+}
+
+.oh {
+  overflow: hidden;
+}
+
+/*字体*/
+.fs12 {
+  font-size: @fs12;
+}
+
+.fs14 {
+  font-size: @fs14;
+}
+
+.fs16 {
+  font-size: @fs16;
+}
+
+.fs18 {
+  font-size: @fs18;
+}
+
+.fs20 {
+  font-size: @fs20;
+}
+.ml10 {
+  margin-left: 10px;
+}
+.ml20 {
+  margin-left: 20px;
+}
+
+.ml40 {
+  margin-left: 40px;
+}
+
+.mr27 {
+  margin-right: 27px;
+}
+
+.mr20 {
+  margin-right: 20px;
+}
+.mr12 {
+  margin-right: 12px;
+}
+.mt4 {
+  margin-top: 4px;
+}
+.mt8 {
+  margin-top: 8px;
+}
+.mt20 {
+  margin-top: 20px;
+}
+
+.mt35 {
+  margin-top: 35px;
+}
+
+.w266 {
+  width: 266px;
+}
+
+.h15 {
+  height: 15px;
+}
+
+.bgj {
+  background-color: #29d582;
+}
+
+.bgz {
+  background-color: #ffc62f;
+}
+
+.bgf {
+  background-color: #ff587b;
+}
+
+.dib {
+  display: inline-block;
+  margin-right: -1px;
+}
+
+.dy-btn {
+  border-radius: 2px;
+  width: 100px;
+  height: 36px;
+  line-height: 36px;
+  color: #fff;
+  cursor: @cursor-pointer;
+  text-align: @tc;
+}
+
+.dy-btn2 {
+  border-radius: 2px;
+  width: 150px;
+  height: 46px;
+  line-height: 46px;
+  color: #fff;
+  cursor: @cursor-pointer;
+  text-align: @tc;
+  font-size: @fs20;
+}
+
+.h(@height) {
+  height: @height px;
+}
+
+.mt(@l) {
+  margin-top: @l px;
+}
+
+.mb(@l) {
+  margin-bottom: @l px;
+}
+
+.mr(@l) {
+  margin-right: @l px;
+}
+
+.ml(@l) {
+  margin-left: @l px;
+}
+
+.lh(@l) {
+  height: @l !important;
+  line-height: @l !important;
+}
+
+.lh60 {
+  .lh(60px);
+}
+
+.lh72 {
+  .lh(72px);
+}
+
+.lh80 {
+  .lh(80px);
+}
+
+.lh158 {
+  .lh(158px);
+}
+
+.lh220 {
+  .lh(220px);
+}
+
+.bottom-bottom {
+  position: absolute;
+  bottom: 0;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.clear{clear:both;}
+
+.ivu-table td.demo-table-info-column{
+  background-color: #f8f8f9;
+}
+
+.undo{
+  color: #c0c0c0;
+  padding-right: 9px;
+}
+
+.title-div{
+  height: 36px;
+  line-height: 36px;
+  padding: 20px;
+}
+
+.title-font{
+  font-size: 16px;
+
+  padding-right: 10px;
+}
+.sub-title-font{
+  padding: 0 0 20px 18px;
+  font-size: 15px;
+}
+
+.back{
+  float: left;
+  width: 32px;
+  height: inherit;
+  line-height: inherit;
+  border-bottom: 2px solid transparent;
+  text-align: center;
+  a{
+    color: #495060;
+  }
+}
+
+.wrapper-content{
+  padding-top: 20px;
+  /*position: relative;*/
+}
+
+.anchor{
+  padding: 0 20px 30px 20px;
+  h2{
+    font-size: 20px;
+    font-weight: 400;
+    margin: 12px 0;;
+  }
+  p{
+    font-size: 16px;
+  }
+}
+.red-info{
+  color: red;
+}
+
+.result{
+  padding-top: 20px;
+}
+
+.icon {
+  width: 2em;
+  height: 2em;
+  vertical-align: -0.7em;
+  fill: currentColor;
+  overflow: hidden;
+}
+
